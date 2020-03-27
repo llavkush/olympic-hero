@@ -155,7 +155,6 @@ top_country_gold=top_df.loc[top_df['Golden_Ratio'].idxmax(),'Country_Name']
 
 # --------------
 #Code starts here
-import numpy as np
 data_1 = data[:-1]
 
 
@@ -172,7 +171,6 @@ best_country=data_1.loc[data_1['Total_Points'].idxmax(),'Country_Name']
 
 # --------------
 #Code starts 
-import numpy as np
 best = data[data['Country_Name']==best_country]
 best=best[['Gold_Total','Silver_Total','Bronze_Total']]
 data.plot.bar()
